@@ -3,9 +3,9 @@
 //
 use super::service::UserService;
 use crate::api::users::dto::UpdateUser;
+use crate::shared::config::app_state::AppState;
 use crate::shared::errors::api_errors::ApiError;
 use crate::shared::middleware::auth::AuthenticatedUser;
-use crate::shared::utils::app_state::AppState;
 use actix_web::{HttpResponse, Result, web};
 use uuid::Uuid;
 

@@ -1,5 +1,5 @@
+use crate::shared::config::app_state::AppState;
 use crate::shared::config::postgres::check_connection;
-use crate::shared::utils::app_state::AppState;
 use actix_web::{HttpResponse, Responder, web};
 
 /// Simple health-check endpoint so you can verify the server is running.

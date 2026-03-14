@@ -4,7 +4,7 @@ mod shared;
 use crate::api::routes::routes;
 
 use crate::shared::config::load_env_var::AuthConfig;
-use crate::shared::{config::postgres, utils::app_state::AppState};
+use crate::shared::config::{app_state::AppState, postgres};
 use actix_web::{App, HttpServer, middleware::Logger, web};
 use dotenvy::dotenv;
 use env_logger::Env;
