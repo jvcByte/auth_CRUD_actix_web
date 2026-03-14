@@ -1,4 +1,4 @@
-use entity::users::{User, user};
+use entity::user::{User, user};
 use sea_orm_migration::prelude::*;
 
 #[derive(DeriveMigrationName)]
@@ -20,7 +20,11 @@ impl MigrationTrait for Migration {
                     )
                     .col(ColumnDef::new(user::Column::Name).string().not_null())
                     .col(ColumnDef::new(user::Column::Email).string().not_null())
-                    .col(ColumnDef::new(user::Column::CreatedAt).timestamp_with_time_zone().default(Expr::current_timestamp()))
+                    .col(
+                        ColumnDef::new(user::Column::CreatedAt)
+                            .timestamp_with_time_zone()
+                            .default(Expr::current_timestamp()),
+                    )
                     .to_owned(),
             )
             .await

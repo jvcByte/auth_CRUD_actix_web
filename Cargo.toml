@@ -2,6 +2,10 @@
 name = "actix_web_template_microservice"
 version = "0.1.0"
 edition = "2024"
+description = ""
+license = "MIT OR Apache-2.0"
+repository = ""
+authors = ["jvcByte: jvc8463@gmail.com"]
 
 [dependencies]
 actix-web = "4.13.0"
