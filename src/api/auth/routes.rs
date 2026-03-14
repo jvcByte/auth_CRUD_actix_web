@@ -1,6 +1,8 @@
 use actix_web::web;
 
-use crate::api::auth::handlers::{cleanup_expired_tokens, login, logout, logout_all, me, refresh, register};
+use crate::api::auth::handlers::{
+    cleanup_expired_tokens, login, logout, logout_all, me, refresh, register,
+};
 
 /// Mount authentication routes under `/auth`.
 ///

@@ -38,8 +38,6 @@ pub fn routes(cfg: &mut web::ServiceConfig) {
         web::scope("/api")
             .route("", web::get().to(available_routes))
             .route("/", web::get().to(available_routes))
-            // Keep the API surface stable by grouping feature scopes under `/api`.
-            // Each feature module (e.g. `users`, `auth`) should expose `routes`.
             .configure(home_routes)
             .configure(user_routes)
             .configure(auth_routes),
