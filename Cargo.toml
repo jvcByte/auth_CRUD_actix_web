@@ -6,5 +6,5 @@ edition = "2024"
 [dependencies]
 actix-web = "4.13.0"
 
-entity = {path = "entities"}
-migration = {path = "migrations"}
+entity = {path = "entity"}
+migration = {path = "migration"}
