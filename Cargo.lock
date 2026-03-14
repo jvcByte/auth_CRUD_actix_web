@@ -192,6 +192,8 @@ dependencies = [
  "actix-web",
  "entity",
  "migration",
+ "serde",
+ "uuid",
 ]
 
 [[package]]

@@ -12,3 +12,5 @@ actix-web = "4.13.0"
 
 entity = {path = "entity"}
 migration = {path = "migration"}
+serde = "1.0.228"
+uuid = "1.22.0"
