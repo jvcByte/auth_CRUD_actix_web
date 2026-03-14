@@ -2,10 +2,10 @@
 // Handlers
 //
 use super::service::UserService;
-use crate::AppState;
 use crate::api::users::dto::UpdateUser;
 use crate::shared::errors::api_errors::ApiError;
 use crate::shared::middleware::auth::AuthenticatedUser;
+use crate::shared::utils::app_state::AppState;
 use actix_web::{HttpResponse, Result, web};
 use uuid::Uuid;
 
