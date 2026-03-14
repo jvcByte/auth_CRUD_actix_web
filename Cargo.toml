@@ -9,8 +9,11 @@ authors = ["jvcByte: jvc8463@gmail.com"]
 
 [dependencies]
 actix-web = "4.13.0"
+chrono = "0.4.44"
 
 entity = {path = "entity"}
 migration = {path = "migration"}
+sea-orm = "1.1.19"
 serde = "1.0.228"
+serde_json = "1.0.149"
 uuid = "1.22.0"
